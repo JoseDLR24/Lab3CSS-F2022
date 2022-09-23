@@ -1,0 +1,83 @@
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 5% 25%;
+}
+
+.container {
+    border: 1px solid black;
+    display: grid;
+    /* grid-template-columns: ; */
+    grid-template-rows: 0.5fr 0.5fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "branding adv1      adv1        adv1        search"
+    "branding globalnav globalnav   globalnav   globalnav"
+    "localnav topstory  topstory    topstory    adv2"
+    "localnav globalnew nationalnew localnew    adv2"
+    "localnav globalnew nationalnew localnew    stockmt"
+    "footer   footer    footer      footer      footer"
+    ;
+    gap: 4px 6px;
+
+}
+
+.item-a {
+    grid-area: branding;
+    background-color: salmon;
+}
+
+.item-b {
+    grid-area: globalnav;
+    background-color: rgb(255, 211, 130);
+}
+
+.item-c {
+    grid-area: localnav;
+    background-color: mediumpurple;
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: rgb(255, 255, 95);
+}
+
+.item-e {
+    grid-area: topstory;
+    background-color: peru;
+}
+
+.item-f {
+    grid-area: globalnew;
+    background-color: lightpink;
+}
+
+.item-g {
+    grid-area: nationalnew;
+    background-color: orange;
+}
+
+.item-h {
+    grid-area: localnew;
+    background-color: lightseagreen;
+}
+
+.item-i{
+    grid-area: search;
+    background-color: lightblue;
+}
+
+.item-j {
+    grid-area: stockmt;
+    background-color: olive;
+}
+
+.item-k {
+    grid-area: adv1;
+    background-color: lightgreen;
+}
+.item-l {
+    grid-area: adv2;
+    background-color: rgb(3, 206, 3);
+}
